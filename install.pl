@@ -55,7 +55,7 @@ sub main{
     
     my $_remove = join(' ',@remove);
     my $remove_cmd = 'sudo apt-get remove';
-    system("$remove_cmd $_reove");
+    system("$remove_cmd $_remove");
     
     print "end\n";
 }
