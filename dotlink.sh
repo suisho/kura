@@ -1,0 +1,1 @@
+ln ./dotfile/.vimrc ~/.vimrc
