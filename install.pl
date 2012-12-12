@@ -17,10 +17,9 @@ sub main{
       	fish
         vim
         php5
-      	php-fpm
+      	php5-fpm
     	ssh
     	nkf
-    	open-vm-tools
     	
         sysv-rc-conf
         bash-completion
@@ -31,10 +30,8 @@ sub main{
         checkinstall
         ibus-mozc
   	    
-  	    ttf-inconsolata
+        ttf-inconsolata
         ttf-dejavu
-        ubuntu-gnome-desktop 
-        ubuntu-gnome-default-settings
     );
     my @npms = qw(
         node-dev
