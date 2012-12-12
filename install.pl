@@ -13,15 +13,15 @@ sub main{
         cpanminus
         npm
         nginx
-  	    emacs
-  	    fish
+      	emacs
+      	fish
         vim
         php5
-  	    php-fpm
-		ssh
-		nkf
-		open-vm-tools
-	
+      	php-fpm
+    	ssh
+    	nkf
+    	open-vm-tools
+    	
         sysv-rc-conf
         bash-completion
         build-essential
@@ -33,6 +33,8 @@ sub main{
   	    
   	    ttf-inconsolata
         ttf-dejavu
+        ubuntu-gnome-desktop 
+        ubuntu-gnome-default-settings
     );
     my @npms = qw(
         node-dev
