@@ -1,2 +1,2 @@
-ln ./dotfile/vimrc ~/.vimrc
-ln ./dotfile/gitconfig ~/.gitconfig
+ln -b ./dotfile/vimrc ~/.vimrc
+ln -b ./dotfile/gitconfig ~/.gitconfig
