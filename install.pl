@@ -29,6 +29,9 @@ sub main{
         zlib1g-dev
         checkinstall
         ibus-mozc
+        galternatives
+        compiz-plugins
+        compizconfig-settings-manager
   	    
         ttf-inconsolata
         ttf-dejavu
