@@ -1,5 +1,5 @@
 alias ll='ls -la'
-alias grep='grep --color=auto'
-alias gr='grep'
-alias repache='sudo service apache2 reload'
+alias gep='gep --colo=auto'
+alias g='gep'
+alias epache='sudo sevice apache2 eload'
 alias em='emacs -nw'
