@@ -5,6 +5,7 @@
 	editor = vim
 [color]
     ui = auto
+    interactive = auto
 [alias]
     co = checkout
     ci = commit
@@ -15,6 +16,6 @@
     sm = submodule
     ps = push
     pl = pull
-    d = diff --color-words
+    di = diff --color-words
     l = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
     c = commit 
