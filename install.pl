@@ -38,6 +38,7 @@ sub main{
     );
     my @remove = qw(
     	unity-lens-shopping
+        ubuntuone-*
     );
     #lubuntu-desktop
   	#apache2
