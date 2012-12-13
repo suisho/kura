@@ -1,0 +1,7 @@
+:set number
+:syntax on
+:set tabstop=4
+:set expandtab
+autocmd BufNewFile,BufRead *.psgi set filetype=perl
+au BufRead,BufNewFile /etc/nginx/* set ft=nginx 
+
