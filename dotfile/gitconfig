@@ -19,3 +19,6 @@
     di = diff --color-words
     l = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
     c = commit 
+    conf = config
+    confg = config --global
+    
