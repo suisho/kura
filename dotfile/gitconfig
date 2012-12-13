@@ -1,0 +1,19 @@
+[include]
+	path = .gitconfig.local
+[core]
+	editor = vim
+[color]
+    ui = auto
+[alias]
+    co = checkout
+    ci = commit
+    cm = commit -m
+    ca = commit -a
+    s = status
+    b = branch
+    sm = submodule
+    ps = push
+    pl = pull
+    d = diff
+    l = log
+    

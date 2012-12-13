@@ -20,7 +20,7 @@ sub main{
       	php5-fpm
     	ssh
     	nkf
-    	
+  	
         sysv-rc-conf
         bash-completion
         build-essential
@@ -29,9 +29,14 @@ sub main{
         zlib1g-dev
         checkinstall
         ibus-mozc
+        galternatives
+        compiz-plugins
+        compizconfig-settings-manager
   	    
         ttf-inconsolata
         ttf-dejavu
+
+        chromium-browser
     );
     my @npms = qw(
         node-dev
