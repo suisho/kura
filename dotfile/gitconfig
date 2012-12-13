@@ -1,6 +1,7 @@
 [include]
 	path = .gitconfig.local
 [core]
+    excludesfile = ~/.gitignore
 	editor = vim
 [color]
     ui = auto
@@ -15,5 +16,5 @@
     ps = push
     pl = pull
     d = diff
-    l = log
-    
+    l = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+    c = commit 
