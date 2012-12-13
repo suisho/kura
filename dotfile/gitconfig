@@ -17,6 +17,7 @@
     ps = push
     pl = pull
     di = diff --color-words
+    d = diff --color-words
     l = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
     c = commit 
     conf = config
