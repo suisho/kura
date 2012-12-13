@@ -2,6 +2,6 @@
 :syntax on
 :set tabstop=4
 :set expandtab
-autocmd BufNewFile,BufRead *.psgi set filetype=perl
-au BufRead,BufNewFile /etc/nginx/* set ft=nginx 
-
+au BufNewFile,BufRead *.psgi set filetype=perl
+au BufNewFile,BufRead /etc/nginx/* set ft=nginx 
+au BufNewFile,BufRead *gitconfig* set ft=gitconfig
