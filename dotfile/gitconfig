@@ -16,4 +16,4 @@
     pl = pull
     d = diff
     l = log
-    
+    confls = config -l --includes
