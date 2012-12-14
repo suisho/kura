@@ -32,7 +32,10 @@ sub main{
         galternatives
         compiz-plugins
         compizconfig-settings-manager
-  	    
+        gconf-editor  	    
+        gnome-shell
+        gnome-tweak-tool
+
         ttf-inconsolata
         ttf-dejavu
     );
