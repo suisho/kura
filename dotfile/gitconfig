@@ -1,9 +1,11 @@
 [include]
 	path = .gitconfig.local
 [core]
+    excludesfile = ~/.gitignore
 	editor = vim
 [color]
     ui = auto
+    interactive = auto
 [alias]
     co = checkout
     ci = commit
@@ -14,6 +16,10 @@
     sm = submodule
     ps = push
     pl = pull
-    d = diff
-    l = log
+    di = diff --color-words
+    d = diff --color-words
+    l = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+    c = commit 
+    conf = config
+    confg = config --global
     confls = config -l --includes

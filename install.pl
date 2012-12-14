@@ -20,7 +20,7 @@ sub main{
       	php5-fpm
     	ssh
     	nkf
-    	
+  	
         sysv-rc-conf
         bash-completion
         build-essential
@@ -38,6 +38,8 @@ sub main{
 
         ttf-inconsolata
         ttf-dejavu
+
+        chromium-browser
     );
     my @npms = qw(
         node-dev
