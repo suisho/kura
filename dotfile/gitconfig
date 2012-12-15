@@ -1,8 +1,8 @@
 [include]
-	path = .gitconfig.local
+    path = .gitconfig.local
 [core]
     excludesfile = ~/.gitignore
-	editor = vim
+    editor = vim
 [color]
     ui = auto
     interactive = auto
@@ -22,4 +22,4 @@
     c = commit 
     conf = config
     confg = config --global
-    
+    confls = config -l --includes
