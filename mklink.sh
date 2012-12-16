@@ -1,5 +1,8 @@
 ln -b ./dotfile/vimrc ~/.vimrc
 ln -b ./dotfile/gitconfig ~/.gitconfig
 ln -b ./dotfile/gitignore ~/.gitignore
+ln -b ./dotfile/bashrc ~/.bashrc
 ln -b ./dotfile/bash_aliases ~/.bash_aliases
-source ~/.bashrc
+
+. ~/.bashrc
+. ~/.bash_aliases
