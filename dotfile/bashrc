@@ -1,4 +1,3 @@
-echo "a"
 if [ -f /etc/skel/.bashrc ]; then
     . /etc/skel/.bashrc
 fi
