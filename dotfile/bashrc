@@ -1,5 +1,7 @@
-echo "a"
 if [ -f /etc/skel/.bashrc ]; then
     . /etc/skel/.bashrc
+fi
+if [ -f ~/.bash_local ]; then
+    . ~/.bash_local
 fi
 
