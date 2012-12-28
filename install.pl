@@ -35,6 +35,7 @@ sub main{
         gconf-editor  	    
         gnome-shell
         gnome-tweak-tool
+        nautilus-dropbox
 
         ttf-inconsolata
         ttf-dejavu
