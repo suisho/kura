@@ -13,13 +13,17 @@
     ca = commit -a
     s = status
     b = branch
+    a = add
     sm = submodule
     ps = push
     pl = pull
     di = diff --color-words
-    d = diff --color-words
-    l = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+    d  = diff --color-words
+    l  = log --graph  --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+    ll = log --graph  --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s%n %C(white)- %an, %ar%Creset'
+    logall = log --decorate  --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
     c = commit 
     conf = config
     confg = config --global
     confls = config -l --includes
+    rem = remote
