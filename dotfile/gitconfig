@@ -7,7 +7,7 @@
     ui = auto
     interactive = auto
 [push]
-    default upstream
+    default=upstream
 [alias]
     co = checkout
     c = commit
