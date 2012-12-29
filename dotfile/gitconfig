@@ -6,6 +6,8 @@
 [color]
     ui = auto
     interactive = auto
+[push]
+    default upstream
 [alias]
     co = checkout
     ci = commit
