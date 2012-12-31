@@ -18,3 +18,5 @@ node_modules/*
 Session.vim
 .netrwhist
 
+#jshintrcは本当に必要なときだけでいいだろう
+.jshintrc
