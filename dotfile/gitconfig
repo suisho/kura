@@ -6,9 +6,11 @@
 [color]
     ui = auto
     interactive = auto
+[push]
+    default=upstream
 [alias]
     co = checkout
-    ci = commit
+    c = commit
     cm = commit -m
     ca = commit -a
     s = status
@@ -19,12 +21,13 @@
     pl = pull
     di = diff --color-words
     d  = diff --color-words
+    dst = !git d --staged
     l  = log --graph  --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
     ll = log --graph  --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s%n %C(white)- %an, %ar%Creset'
     la = !git l --all
     logall = log --decorate  --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
-    c = commit 
     conf = config
     confg = config --global
     confls = config -l --includes
     rem = remote
+    user = !git config user.name suisho && git config user.email suisho00000@gmail.com && git commit --amend --reset-author
