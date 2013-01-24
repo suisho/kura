@@ -3,6 +3,7 @@
 [core]
     excludesfile = ~/.gitignore
     editor = vim
+    sparsecheckout = true
 [gui]
     encoding = utf-8
 [i18n]
