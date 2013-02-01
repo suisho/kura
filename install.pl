@@ -38,6 +38,7 @@ sub main{
 
         ttf-inconsolata
         ttf-dejavu
+        tmux
     );
     my @npms = qw(
         node-dev
