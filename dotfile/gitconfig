@@ -10,8 +10,6 @@
 [color]
     ui = auto
     interactive = auto
-[push]
-    default=simple
 [alias]
     co = checkout
     cob = checkout -b
