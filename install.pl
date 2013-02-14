@@ -13,14 +13,14 @@ sub main{
         cpanminus
         npm
         nginx
-        emacs
-        fish
+      	emacs
+      	fish
         vim
         php5
-        php5-fpm
-        ssh
-        nkf
-    
+      	php5-fpm
+    	ssh
+    	nkf
+    	
         sysv-rc-conf
         bash-completion
         build-essential
@@ -32,28 +32,26 @@ sub main{
         galternatives
         compiz-plugins
         compizconfig-settings-manager
-        gconf-editor        
+        gconf-editor  	    
         gnome-shell
         gnome-tweak-tool
-        nautilus-dropbox
 
         ttf-inconsolata
         ttf-dejavu
-
-        chromium-browser
     );
     my @npms = qw(
         node-dev
     );
     my @remove = qw(
-        unity-lens-shopping
+    	unity-lens-shopping
         ubuntuone-*
+        firefox
     );
     #lubuntu-desktop
-    #apache2
-    #gnome-shell
+  	#apache2
+  	#gnome-shell
     #vim
-    #gnome-tweak-tool
+	#gnome-tweak-tool
     print "start\n";
     my $_install = join(' ',@install);
     my $install_cmd = 'sudo apt-get install';
