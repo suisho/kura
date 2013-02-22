@@ -1,6 +1,9 @@
 #editor
 *.sublime*
 *.komodoproject*
+nbproject/
+.idea
+*.iml
 
 #something
 .gitattributes
@@ -20,3 +23,15 @@ Session.vim
 
 #jshintrcは本当に必要なときだけでいいだろう
 .jshintrc
+
+#netbeans
+manifest.mf
+nbbuild.xml
+nbbuild
+nbdist
+
+#
+test/github.js
+
+#
+.svn
