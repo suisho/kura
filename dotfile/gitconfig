@@ -4,6 +4,8 @@
     excludesfile = ~/.gitignore
     editor = vim
     sparsecheckout = true
+    autocrlf = false
+    eol = lf
 [gui]
     encoding = utf-8
 [i18n]
