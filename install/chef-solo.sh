@@ -10,7 +10,7 @@ git clone git://github.com/sstephenson/ruby-build.git
 
 git clone git://github.com/dcarley/rbenv-sudo.git 
 
-source .bashrc 
+source ~/.bashrc 
 
 rbenv install 1.9.2-p290
 rbenv global 1.9.2-p290
