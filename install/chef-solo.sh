@@ -8,6 +8,8 @@ mkdir -p ~/.rbenv/plugins
 cd ~/.rbenv/plugins
 git clone git://github.com/sstephenson/ruby-build.git
 
+git clone git://github.com/dcarley/rbenv-sudo.git 
+
 source .bashrc 
 
 rbenv install 1.9.2-p290
