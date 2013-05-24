@@ -17,3 +17,6 @@ if [ -f ~/.rbenv ]; then
 fi
 alias tm=tmux
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+# for brew
+export PATH="/usr/local/bin:$PATH"
