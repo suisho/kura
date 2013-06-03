@@ -1,0 +1,5 @@
+site :opscode
+
+cookbook 'homebrew'
+cookbook 'zsh'
+cookbook 'mysql'
