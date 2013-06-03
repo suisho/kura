@@ -20,7 +20,7 @@ sub main{
       	php5-fpm
     	ssh
     	nkf
-  	
+    	
         sysv-rc-conf
         bash-completion
         build-essential
@@ -38,8 +38,7 @@ sub main{
 
         ttf-inconsolata
         ttf-dejavu
-
-        chromium-browser
+        tmux
     );
     my @npms = qw(
         node-dev
@@ -47,6 +46,7 @@ sub main{
     my @remove = qw(
     	unity-lens-shopping
         ubuntuone-*
+        firefox
     );
     #lubuntu-desktop
   	#apache2

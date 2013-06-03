@@ -2,7 +2,12 @@
 :syntax on
 :set tabstop=4
 :set expandtab
+
+inoremap <C-s> <Esc>:w<CR>
+
 au BufNewFile,BufRead *.psgi set filetype=perl
 au BufNewFile,BufRead /etc/nginx/* set ft=nginx 
 au BufNewFile,BufRead *gitconfig* set ft=gitconfig
 au BufNewFile,BufRead *gitignore* set ft=gitignore
+au BufNewFile,BufRead *bash_* set ft=sh
+

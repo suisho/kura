@@ -1,3 +1,5 @@
+#echo "alias"
+
 alias ll='ls -la'
 alias gep='gep --colo=auto'
 alias gt='git'

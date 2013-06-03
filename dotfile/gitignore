@@ -1,12 +1,16 @@
 #editor
 *.sublime*
 *.komodoproject*
+nbproject/
+.idea
+*.iml
 
 #something
 .gitattributes
 .gitignore
 memo/*
 sandbox/*
+symbolic.bat
 
 #nodejs
 node_modules/*
@@ -16,3 +20,18 @@ node_modules/*
 *.un~
 Session.vim
 .netrwhist
+
+#jshintrcは本当に必要なときだけでいいだろう
+.jshintrc
+
+#netbeans
+manifest.mf
+nbbuild.xml
+nbbuild
+nbdist
+
+#
+test/github.js
+
+#
+.svn
