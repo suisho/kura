@@ -6,8 +6,9 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-
-template "/tmp/.bashrc_" do
+userdir = File.expand_path("~/", __FILE__)
+template "#{userdir}/.bashrc" do
 	action :create
+	mode 0700
 	source "bash.erb"
 end
