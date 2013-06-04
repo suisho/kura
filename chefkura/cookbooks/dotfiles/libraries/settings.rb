@@ -1,4 +1,4 @@
-
+# encoding: utf-8
 class Shell
   def create_path_array(paths)
     [].concat(paths).concat(["$PATH"])
@@ -12,6 +12,9 @@ class Bash < Shell
   end
   
   def export(key, value)
+    if /\s/ =~ value
+      value = '"' + value + '"'
+    end
     "export #{key}=#{value}"
   end
 end
