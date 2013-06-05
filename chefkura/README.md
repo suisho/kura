@@ -24,4 +24,7 @@ rspec cookbooks/dotfiles
 ```
 $ bundle install --path vendor/bundle
 ```
+```
+bundle exec rake chefsolo
+```
 https://github.com/opscode/chef/pull/676
