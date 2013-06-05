@@ -23,6 +23,12 @@ class Zsh < Bash
 end
 
 class Fish < Shell
+
+  def add_path(paths)
+    value = create_path_array(paths).join(" ")
+    export("PATH", value)
+  end
+
   def export(key, value)
     "SET #{key} #{value}"
   end

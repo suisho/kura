@@ -32,8 +32,8 @@ describe "library" do
 
     it "should add $PATH" do
       paths = ["/usr/local/bin", "~/bin/"]
-      actual = bash.add_path(paths)
-      expect(actual).to eq 'export PATH=/usr/local/bin:~/bin/:$PATH'
+      actual = fish.add_path(paths)
+      expect(actual).to eq 'SET PATH /usr/local/bin ~/bin/ $PATH'
       expect(paths).to eq ["/usr/local/bin", "~/bin/"]
     end
   end
