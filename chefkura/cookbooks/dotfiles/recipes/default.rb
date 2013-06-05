@@ -1,4 +1,4 @@
-#
+# encoding:utf-8
 # Cookbook Name:: shellconf
 # Recipe:: default
 #
@@ -41,8 +41,9 @@ template get_rc("zsh") do
   source "zsh.erb"
 end
 
+# 
 ruby_block "reload rc file" do
   block do
-    system("source #{current_rc}")
+    print("You should execute: source #{current_rc}")
   end
 end
