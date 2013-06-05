@@ -10,7 +10,7 @@
 # mklink
 link "sublime" do
 	link_type :symbolic
-	target_file "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"
-	to "/usr/local/bin/sublime"
+  target_file "/usr/local/bin/sublime"
+  to '/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl'
 	action :create
 end
