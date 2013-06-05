@@ -4,7 +4,11 @@ source "https://rubygems.org"
 gem 'chef'
 gem 'knife-solo'
 gem 'berkshelf'
+gem 'chefspec'
 
 gem 'rspec'
 gem 'simplecov', :require => false, :group => :test
+
+gem 'serverspec'
+
 #gem 'simplecov-rcov'
