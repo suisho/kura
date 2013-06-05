@@ -21,4 +21,7 @@ knife cookbook test dotfiles -o cookbook
 ```
 rspec cookbooks/dotfiles
 ```
+```
+$ bundle install --path vendor/bundle
+```
 https://github.com/opscode/chef/pull/676
