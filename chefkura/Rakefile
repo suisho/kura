@@ -9,7 +9,10 @@ require 'rspec/core'
 desc "Run all specs in spec directory"
 
 RSpec::Core::RakeTask.new do |task|
-  task.pattern = "spec/**/*_spec.rb"
+  task.pattern = [
+    "spec/**/*_spec.rb",
+    "cookbooks/**/spec/**/*_spec.rb"
+  ]
   task.rspec_opts = '--color'
 end
 =begin
