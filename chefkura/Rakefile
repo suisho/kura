@@ -1,0 +1,45 @@
+# -*- encoding: utf-8 -*-
+
+require 'rake'
+require 'rspec/core/rake_task'
+require 'rubygems'
+ 
+require 'rspec/core'
+
+desc "Run all specs in spec directory"
+
+RSpec::Core::RakeTask.new do |task|
+  task.pattern = [
+    "spec/**/*_spec.rb",
+    "cookbooks/**/spec/**/*_spec.rb"
+  ]
+  task.rspec_opts = '--color'
+end
+=begin
+task :cookbook do
+  RSpec::Core::RakeTask.new do |task|
+    task.pattern = "cookbooks/spec/**/*_spec.rb"
+    task.rspec_opts = '--color'
+  end
+end
+=end
+task :install do
+  system("bundle install --path=vendor/bundle")
+  system("bundle exec berks install --path vendor/cookbooks")
+end
+
+task :default => :spec
+
+namespace :chef do
+  cookbooks = [
+    "dotfiles",
+    "mac",
+    "sublime"
+  ]
+  task :solo do
+   system("bundle exec chef-solo -c solo.rb -o " + cookbooks.join(" "))
+  end
+  task :debug do
+    system("bundle exec chef-solo -c solo.rb -l debug -o " + cookbooks.join(" "))
+  end
+end
