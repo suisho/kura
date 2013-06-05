@@ -4,13 +4,27 @@ require 'rake'
  
 require 'rspec/core'
 require 'rspec/core/rake_task'
- 
-task :default => :spec
- 
-
 
 desc "Run all specs in spec directory"
 RSpec::Core::RakeTask.new do |task|
-  task.pattern = "**/spec/*_spec.rb"
+  task.pattern = "**/spec/**/*_spec.rb"
   task.rspec_opts = '--color'
+end
+
+task :install do
+  system("bundle install --path=vendor/bundle")
+  system("bundle exec berks install --path vendor/cookbooks")
+end
+
+task :default => :spec
+namespace :chef do
+  cookbooks = [
+    "dotfiles",
+    "mac",
+    "sublime"
+  ]
+
+  task :default => system("bundle exec chef-solo -c solo.rb -o " + cookbooks.join(" "))
+  task :debug   => system("bundle exec chef-solo -c solo.rb -l debug -o " + cookbooks.join(" "))
+  
 end
