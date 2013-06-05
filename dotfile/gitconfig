@@ -1,4 +1,4 @@
-[include]
+[nclude]
     path = .gitconfig.local
 [core]
     excludesfile = ~/.gitignore
@@ -28,10 +28,12 @@
     cm = commit -m
     ca = commit -a
     di = diff --color-words
-    d = diff
-    dst = !git d --staged
+    d  = diff --color-words
     l  = log --graph  --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
     ll = log --graph  --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s%n %C(white)- %an, %ar%Creset'
+    logall = log --decorate  --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+    c = commit 
+    dst = !git d --staged
     la = !git l --all
     graph = log --graph
     logall = log --decorate  --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
