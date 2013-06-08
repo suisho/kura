@@ -1,0 +1,19 @@
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+if [ -f /etc/skel/.bashrc ]; then
+    . /etc/skel/.bashrc
+fi
+if [ -f ~/.bash_local ]; then
+    . ~/.bash_local
+fi
+
+<%= render 'shell_rc/_nvm.erb' %>
+
+<%= render 'shell_rc/_rbenv.erb' %>
+
+<%= render 'shell_rc/_alias.erb' %>
+
+<%= render 'shell_rc/_paths.erb' %>
+
+<%= render 'shell_rc/_export.erb' %>

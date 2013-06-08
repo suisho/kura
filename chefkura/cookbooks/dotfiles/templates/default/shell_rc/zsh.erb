@@ -1,0 +1,22 @@
+if [ -f ~/.zsh_local ]; then
+    . ~/.zsh_local
+fi
+
+<%= render 'shell_rc/_nvm.erb' %>
+
+<%= render 'shell_rc/_rbenv.erb' %>
+
+<%= render 'shell_rc/_alias.erb' %>
+
+<%= render 'shell_rc/_paths.erb' %>
+
+<%= render 'shell_rc/_export.erb' %>
+
+<%= render 'shell_rc/_oh_my_zsh.erb' %>
+
+# brew
+fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
+
+autoload -U compinit
+compinit -u
+
