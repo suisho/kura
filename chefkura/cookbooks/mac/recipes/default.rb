@@ -13,5 +13,11 @@ end
 execute "show hidden file" do
   command "defaults write com.apple.finder AppleShowAllFiles -boolean true"
 end
-execute "killall Finder" do
-end
+# TODO: 必要だったら
+#execute "killall Finder" do
+#end
+
+#package "oh-my-zsh"
+#curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+
+include_recipe "mac::iterm"
