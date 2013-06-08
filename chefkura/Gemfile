@@ -13,4 +13,3 @@ gem 'serverspec'
 
 #gem 'simplecov-rcov'
 
-gem 'kaigara', :git => 'git://github.com/suisho/kaigara.git'
