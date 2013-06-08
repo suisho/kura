@@ -33,12 +33,13 @@ task :default => :spec
 
 namespace :chef do
   cookbooks = [
+    #"oh-my-zsh",
     "dotfiles",
     "mac",
-    "sublime"
+    #"sublime"
   ]
   task :solo do
-   system("bundle exec chef-solo -c solo.rb -o " + cookbooks.join(" "))
+   system("bundle exec chef-solo -c solo.rb -o " + cookbooks.join(","))
   end
   task :debug do
     system("bundle exec chef-solo -c solo.rb -l debug -o " + cookbooks.join(" "))
