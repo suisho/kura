@@ -26,6 +26,14 @@ def get_rc(shell)
   end
 end
 
+def aliases(shell)
+  aliases = Hash::new
+  current_rc = get_rc(shell)
+  aliases["resource"] = "source #{current_rc}"
+  aliases["chefkura"] = "bundle exec rake chef:solo"
+  return aliases
+end
+
 current = get_current()
 current_rc = get_rc(current)
 

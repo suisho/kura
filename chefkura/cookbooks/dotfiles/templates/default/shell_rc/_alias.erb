@@ -6,3 +6,13 @@ alias repache='sudo sevice apache2 reload'
 alias em='emacs -nw'
 alias tm=tmux
 alias be='bundle exec'
+alias reload='bundle exec rake chef:solo' #TODO
+alias komodo='/Applications/Komodo\ Edit\ 8.app/Contents/MacOS/komodo'
+
+
+# attribute aliases
+<% if @aliases %>
+<% @aliases.each do |a| %>
+alias <%= a.key %>='<%= a.value %>'
+<% end %>
+<% end %>
